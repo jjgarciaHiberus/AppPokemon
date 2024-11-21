@@ -64,5 +64,5 @@ def obtener_informacion_pokemon(nombre):
         print(f"No se encontró información para el Pokémon '{nombre}'.")
 
 # Ejemplo de uso de la función
-nombre_pokemon = input("Ingresa el nombre de un Pokémon (por ejemplo, 'pikachu'): ")
+nombre_pokemon = input("Ingresa el nombre de un Pokémon: ")
 obtener_informacion_pokemon(nombre_pokemon)
