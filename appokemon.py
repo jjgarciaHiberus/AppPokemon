@@ -29,10 +29,10 @@ def query_type(pokemon_type):
         strong_against = ', '.join(type_effectiveness[pokemon_type]["strong"])
         weak_against = ', '.join(type_effectiveness[pokemon_type]["weak"])
         no_effect = ', '.join(type_effectiveness[pokemon_type]["no_effect"])
-        print(f"🔹 Type {pokemon_type.capitalize()}:")
-        print(f"   ✅ Strong against: {strong_against}")
-        print(f"   ❌ Weak against: {weak_against}")
-        print(f"   🚫 No effect on: {no_effect}")
+        print(f"\n🔹 Type {pokemon_type.capitalize()}:")
+        print(f"   ✅ Fuerte contra: {strong_against}")
+        print(f"   ❌ Debil contra: {weak_against}")
+        print(f"   🚫 Sin efecto de: {no_effect}")
     else:
         print(f"❌ Type '{pokemon_type}' not found.")
 
@@ -84,13 +84,13 @@ def get_pokemon_info(name):
         image_url = pokemon_data['sprites']['front_default']
         
         # Display Pokémon information
-        print(f"\n🔹 Name: {pokemon_name.capitalize()}")
+        print(f"\n🔹 Nombre: {pokemon_name.capitalize()}")
         print(f"🔹 ID: {pokemon_id}")
-        print(f"🔹 Description: {description}")
-        print(f"🔹 Types: {', '.join(types).capitalize()}")
-        print(f"🔹 Abilities: {', '.join(abilities).capitalize()}")
+        print(f"🔹 Descripcion: {description}")
+        print(f"🔹 Tipo: {', '.join(types).capitalize()}")
+        print(f"🔹 Habilidades: {', '.join(abilities).capitalize()}")
         
-        print("\n📊 Stats:")
+        print("\n📊 Estadisticas:")
         for stat, value in stats.items():
             print(f"  - {stat.capitalize()}: {value}")
         
@@ -108,5 +108,5 @@ def get_pokemon_info(name):
         print(f"❌ Unexpected error: {e}")
 
 # Example usage
-pokemon_name = input("Enter the name of a Pokémon: ")
+pokemon_name = input("Introduce el pokemon: ")
 get_pokemon_info(pokemon_name)
