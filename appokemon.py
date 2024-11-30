@@ -107,6 +107,6 @@ def get_pokemon_info(name):
     except Exception as e:
         print(f"❌ Unexpected error: {e}")
 
-# Example usage
+# Solicitamos el nombre
 pokemon_name = input("Introduce el pokemon: ")
 get_pokemon_info(pokemon_name)
